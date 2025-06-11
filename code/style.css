@@ -4,6 +4,23 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #d1b97c; /* não funciona aaaa*/
+    text-decoration: underline;
+    font-size: 1.15rem;
+    transition: 0.03s;
+}
+
+.cabeçalho {
+    background-color: antiquewhite; 
+    border-bottom: 2px solid #d1b97c;
+    padding: 1rem 2rem;
+}
+
 header img {
     width: 100%;
     display: block;
@@ -59,11 +76,10 @@ hr {
     border: none;
     margin: 1rem 0;
 }
-
-aside {
-    padding: 1rem;
-    background-color: rgb(235, 216, 136);
-    border-radius: 1rem;
+#rodape-mais h2 {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
 }
 #rodape-mais{
     padding: 1rem;
