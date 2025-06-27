@@ -120,11 +120,6 @@ header img {
     padding-left: 0.2rem;
 }
 
-.mais a:not(.btn-saiba-mais):hover {
-    color: #ffd43b;
-    text-decoration: underline;
-}
-
 .doencas {
     display: flex;
     flex-wrap: wrap;
