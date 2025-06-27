@@ -60,9 +60,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 document.getElementById('modal-descricao').style.textAlign = 'left';
                 document.getElementById('modal-hepatite').style.display = 'flex';
             }
-
         });
-
     });
 
     document.querySelector('.close-modal').onclick = function() {
