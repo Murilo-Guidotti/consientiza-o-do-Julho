@@ -42,25 +42,25 @@
                 </div>
             </div>  
             <div class="doencas">
-                <h3 style="color: #f3f3f3">Doenças Relacionadas</h3>
+                <h3 style="color: #f3f3f3; text-decoration: none">Doenças Relacionadas</h3> <!-- Style para tirar as alterações do Saiba mais -->
                 <hr>
-                <div class="doenca" id="A">
+                <div class="doenca" data-tipo="A">
                     <h4>Hepatite A</h4>
                     <p>Descrição da Hepatite A</p>
                 </div>
-                <div class="doenca" id="B">
+                <div class="doenca" data-tipo="B">
                     <h4>Hepatite B</h4>
                     <p>Descrição da Hepatite B</p>
                 </div>
-                <div class="doenca" id="C">
+                <div class="doenca" data-tipo="C">
                     <h4>Hepatite C</h4>
                     <p>Descrição da Hepatite C</p>
                 </div>
-                <div class="doenca" id="D">
+                <div class="doenca" data-tipo="D">
                     <h4>Hepatite D</h4>
                     <p>Descrição da Hepatite D</p>
                 </div>
-                <div class="doencaE" id="E">
+                <div class="doencaE" data-tipo="E">
                     <h4>Hepatite E</h4>
                     <p>Descrição da Hepatite E</p>
                 </div>
@@ -82,11 +82,11 @@
 
     <!-- Modal -->
     <div id="modal-hepatite" class="modal">
-    <div class="modal-content">
-        <span class="close-modal">&times;</span>
-        <h2 id="modal-titulo"></h2>
-        <p id="modal-descricao"></p>
-    </div>
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 id="modal-titulo"></h2>
+            <p id="modal-descricao"></p>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
