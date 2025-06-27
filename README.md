@@ -1,5 +1,9 @@
-# consientiza-o-do-Julho
+Aopa, se vc esta nessa pagina é pq o github nao te mandou para o index.html 🫤
+<br>
+mas pode ficar tranquilo, aqui embaixo esta o link para ir para a pagina de verdade
 
-#esse site é um projeto de escola, não espera nada muito bom, e não leve tudo oque for dito aqui a sério
-
-é um site sobre o Julho :D
+|
+<br>
+V
+<br>
+[Acesso ao site](https://murilo-guidotti.github.io/consientiza-o-do-Julho/code/index.html)
