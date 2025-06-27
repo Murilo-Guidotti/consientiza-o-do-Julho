@@ -6,23 +6,30 @@
 }
 
 html {
-    font-size: 16px; /* base para rem */
+    font-size: 16px;
+}
+
+body {
+    background: #23272f; /* cinza azulado escuro */
+    color: #f3f3f3;
+    font-family: 'Segoe UI', Arial, sans-serif;
 }
 
 a {
+    color: #ffe066;
     text-decoration: none;
+    transition: color 0.2s;
 }
 
 a:hover {
-    color: #d1b97c;
+    color: #ffd43b;
     text-decoration: underline;
     font-size: 1.15rem;
-    transition: color 0.2s, font-size 0.2s;
 }
 
 .cabeçalho {
-    background-color: antiquewhite;
-    border-bottom: 0.125rem solid #d1b97c;
+    background-color: #313543;
+    border-bottom: 0.125rem solid #ffd43b;
     padding: 1rem 5vw;
 }
 
@@ -33,6 +40,10 @@ header img {
 }
 
 .Titulo {
+    background: #363a49;
+    border-radius: 1rem;
+    box-shadow: 0 2px 16px #0004;
+    color: #ffe066;
     margin: 0 auto;
     height: auto;
     display: flex;
@@ -40,12 +51,14 @@ header img {
     align-items: center;
     justify-content: center;
     padding: 2rem 5vw;
-    border-radius: 1rem;
     max-width: 90%;
     width: 100%;
 }
 
 .container {
+    background: #2a2e39;
+    border-radius: 1rem;
+    box-shadow: 0 2px 16px #0002;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -63,25 +76,53 @@ header img {
 }
 
 .principal {
+    background: #363a49;
+    border-radius: 1rem;
+    box-shadow: 0 1px 8px #0002;
+    color: #f3f3f3;
     flex: 3;
     min-width: 15rem;
-    border-radius: 1rem;
     text-align: justify;
+    padding: 2.5rem 2.5rem; 
+    margin-bottom: 1rem;
 }
 
 .mais {
-    padding: 0;
+    background: #363a49;
+    border-radius: 1rem;
+    box-shadow: 0 1px 8px #0002;
+    color: #f3f3f3;
+    padding: 2.5rem 2.5rem; 
     margin-bottom: 0;
     flex: 1;
     min-width: 15rem;
-    border-radius: 1rem;
     text-align: left;
     margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: flex-start;
 }
 
-.mais a {
-    display: block;
-    margin-bottom: 1rem;
+.mais hr {
+    width: 100%;
+    border: none;
+    border-top: 2px solid #ffd43b;
+    margin: 0.5rem 0;
+}
+
+.mais a:not(.btn-saiba-mais) {
+    color: #ffe066;
+    font-size: 1.05rem;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+    transition: color 0.2s;
+    padding-left: 0.2rem;
+}
+
+.mais a:not(.btn-saiba-mais):hover {
+    color: #ffd43b;
+    text-decoration: underline;
 }
 
 .doencas {
@@ -101,8 +142,10 @@ header img {
 }
 
 .doenca, .doencaE {
-    background: #fffbe6;
-    border: 0.0625rem solid #000;
+    background: #404457;
+    border: 1px solid #ffd43b;
+    color: #ffe066;
+    box-shadow: 0 0.125rem 0.5rem #0003;
     border-radius: 1rem;
     padding: 1rem;
     width: 48%;
@@ -110,7 +153,6 @@ header img {
     box-sizing: border-box;
     margin-bottom: 0.5rem;
     text-align: center;
-    box-shadow: 0 0.125rem 0.5rem #0001;
 }
 
 .doencaE {
@@ -119,37 +161,65 @@ header img {
 }
 
 .doenca:hover, .doencaE:hover {
-    box-shadow: 0 0.25rem 0.625rem #ffee52;
+    box-shadow: 0 0.25rem 0.625rem #ffd43b99;
+    background: #525770;
 }
 
 hr {
-    background-color: black;
+    background-color: #ffd43b;
     height: 0.125rem;
     width: 100%;
     border: none;
     margin: 1rem 0;
 }
 
-#rodape-mais h2 {
-    text-align: center;
-    color: #000;
-    font-size: 1.5rem;
-}
-#rodape-mais {
-    padding: 1rem;
-    background-color: rgb(187, 170, 102);
-    margin-top: 2rem;
-    width: 100%;
-    height: 10rem;
-}
 #rodape {
-    bottom: 0;
-    left: 0;
     width: 100%;
-    background-color: rgb(235, 216, 136);
-    padding: 0.7rem;
+    background-color: #313543;
+    padding: 2rem 1rem 1rem 1rem;
     text-align: center;
-    color: #000;
+    color: #ffe066;
+    border-top: 0.125rem solid #ffd43b;
+    margin-top: 2rem;
+    box-shadow: 0 -2px 16px #0005;
+}
+
+#rodape .linha-amarela {
+    width: 5rem;
+    height: 0.4rem;
+    background: #ffd43b;
+    margin-bottom: 1rem;
+    border-radius: 1rem 1rem 0 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#rodape h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #ffe066;
+    letter-spacing: 1px;
+}
+
+#rodape p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: #f3f3f3;
+}
+
+#rodape .separador-creditos {
+    border: none;
+    border-top: 0.125rem solid #ffd43b;
+    width: 60%;
+    margin: 1.5rem auto 1rem auto;
+    background: none;
+    height: 0;
+}
+
+#rodape .creditos {
+    font-size: 1rem;
+    color: #ffd43b;
+    margin-top: 0.5rem;
 }
 
 /* Modal styles */
@@ -159,28 +229,65 @@ hr {
     z-index: 1000;
     left: 0; top: 0;
     width: 100vw; height: 100vh;
-    background: rgba(0,0,0,0.4);
+    background: rgba(35, 39, 47, 0.85); /* fundo escuro translúcido */
     justify-content: center;
     align-items: center;
-}
-.modal-content {
-    background: #fffbe6;
-    padding: 2rem;
-    border-radius: 1rem;
-    min-width: 18.75rem;
-    max-width: 90vw;
-    box-shadow: 0 0.25rem 1rem #0003;
-    text-align: center;
-    position: relative;
-}
-.close-modal {
-    position: absolute;
-    top: 1rem; right: 1rem;
-    font-size: 2rem;
-    cursor: pointer;
+    transition: background 0.3s;
 }
 
-/* Responsividade extra */
+.modal-content {
+    background: #2a2e39;
+    color: #ffe066;
+    padding: 2.5rem 2rem 2rem 2rem;
+    border-radius: 1.5rem;
+    min-width: 320px;
+    max-width: 90vw;
+    box-shadow: 0 8px 32px #000a, 0 1.5px 8px #ffd43b33;
+    text-align: center;
+    position: relative;
+    animation: popupShow 0.3s cubic-bezier(.4,2,.6,1) both;
+}
+
+@keyframes popupShow {
+    0% {
+        opacity: 0;
+        transform: scale(0.8) translateY(40px);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+.close-modal {
+    position: absolute;
+    top: 1.2rem; right: 1.2rem;
+    font-size: 2rem;
+    color: #ffd43b;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: color 0.2s, transform 0.2s;
+    z-index: 10;
+}
+.close-modal:hover {
+    color: #fffbe6;
+    transform: scale(1.2) rotate(10deg);
+}
+
+/* Responsivo para modal */
+@media (max-width: 500px) {
+    .modal-content {
+        padding: 1.2rem 0.5rem 1rem 0.5rem;
+        min-width: 0;
+        font-size: 0.98rem;
+    }
+    .close-modal {
+        top: 0.5rem; right: 0.5rem;
+        font-size: 1.5rem;
+    }
+}
+
 @media (max-width: 900px) {
     .container, .Titulo {
         padding: 2rem 2vw;
