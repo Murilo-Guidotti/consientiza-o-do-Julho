@@ -47,16 +47,28 @@ const infoHepatites = {
 };
 
 document.addEventListener('DOMContentLoaded', function() {
+
     document.querySelectorAll('.doenca, .doencaE').forEach(function(card) {
+
         card.addEventListener('click', function() {
-            document.getElementById('modal-titulo').textContent = card.querySelector('h4').textContent;
-            document.getElementById('modal-descricao').textContent = card.querySelector('p').textContent;
-            document.getElementById('modal-hepatite').style.display = 'flex';
+
+            const tipo = card.dataset.tipo;
+            const info = infoHepatites[tipo];
+            if(tipo) {
+                document.getElementById('modal-titulo').textContent = info.titulo;
+                document.getElementById('modal-descricao').innerHTML = info.descricao;
+                document.getElementById('modal-descricao').style.textAlign = 'left';
+                document.getElementById('modal-hepatite').style.display = 'flex';
+            }
+
         });
+
     });
+
     document.querySelector('.close-modal').onclick = function() {
         document.getElementById('modal-hepatite').style.display = 'none';
     };
+
     window.onclick = function(event) {
         if (event.target.classList.contains('modal')) {
             document.getElementById('modal-hepatite').style.display = 'none';
