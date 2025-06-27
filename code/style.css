@@ -1,4 +1,3 @@
-/* Reset básico */
 * {
     margin: 0;
     padding: 0;
@@ -21,11 +20,17 @@ a {
     transition: color 0.2s;
 }
 
-a:hover {
+h3:hover {
     color: #ffd43b;
-    text-decoration: underline;
-    font-size: 1.15rem;
 }
+
+/* não funcionava q o texto ta na tag "h3" não na tag "a"*/
+a:hover {
+    text-decoration: underline;
+    font-size: 1.1rem;
+    transition: 0.25s;
+}
+
 
 .cabeçalho {
     background-color: #313543;
@@ -83,16 +88,16 @@ header img {
     flex: 3;
     min-width: 15rem;
     text-align: justify;
-    padding: 2.5rem 2.5rem; 
+    padding: 2.5rem 2.5rem;
     margin-bottom: 1rem;
 }
 
 .mais {
     background: #363a49;
     border-radius: 1rem;
-    box-shadow: 0 1px 8px #0002;
+    box-shadow: 0 5px 8px #0002;
     color: #f3f3f3;
-    padding: 2.5rem 2.5rem; 
+    padding: 2.5rem 2.5rem;
     margin-bottom: 0;
     flex: 1;
     min-width: 15rem;
@@ -148,6 +153,7 @@ header img {
     box-sizing: border-box;
     margin-bottom: 0.5rem;
     text-align: center;
+    transition: 0.5s;
 }
 
 .doencaE {
@@ -156,8 +162,17 @@ header img {
 }
 
 .doenca:hover, .doencaE:hover {
-    box-shadow: 0 0.25rem 0.625rem #ffd43b99;
+    transition: 0.3s;
+    width: 49%;
     background: #525770;
+    box-shadow: 0.3rem 0.3rem 1rem #ffd43b99;
+}
+
+.doencaE:hover {
+    transition: 0.3s;
+    width: 52%;
+    background: #525770;
+    box-shadow: 0.3rem 0.3rem 1rem #ffd43b99;
 }
 
 hr {
@@ -216,6 +231,7 @@ hr {
     color: #ffd43b;
     margin-top: 0.5rem;
 }
+
 
 /* Modal styles */
 .modal {
@@ -308,4 +324,3 @@ hr {
         padding: 1rem 0.5rem;
     }
 }
-
